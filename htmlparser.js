@@ -108,7 +108,7 @@ bui.HTMLElement.prototype = {
     },
     setInnerHTML: function (str) {
         var root = this;
-        me.childNodes = [];
+        root.childNodes = [];
         bui.HTMLParser.parse(str, root);
     },
     getInnerHTML: function () {
