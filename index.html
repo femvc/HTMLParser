@@ -12,8 +12,10 @@
 
 function doit(){
     //todo
-    var dd = bui.HTMLParser.parse('<div id="aaa">123</div>', {});
-    console.log(dd);
+    var cc = {};
+    var dd = bui.HTMLParser.parse('<div id="aaa">123</div>', cc);
+    alert(cc.childNodes.length);
+    alert(dd.childNodes.length);
 }
 
 //-->
